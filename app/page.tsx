@@ -201,16 +201,27 @@ export default function Page() {
         id="home"
         className="relative min-h-screen overflow-hidden bg-[#10273D]"
       >
-        <video
-src="/videos/hero-v2.mp4"
-  autoPlay
-  muted
-  loop
-  playsInline
-  webkit-playsinline="true"
-  preload="auto"
-  className="absolute inset-0 h-full w-full object-cover opacity-[0.74]"
-/>
+{/* Desktop Video */}
+<div className="hidden md:block">
+  <video
+    src="/videos/hero-v2.mp4"
+    autoPlay
+    muted
+    loop
+    playsInline
+    preload="auto"
+    className="absolute inset-0 h-full w-full object-cover opacity-[0.74]"
+  />
+</div>
+
+{/* Mobile Poster */}
+<div className="md:hidden absolute inset-0">
+  <img
+    src="/images/Hero-poster.jpg"
+    alt="Hero Background"
+    className="h-full w-full object-cover opacity-[0.74]"
+  />
+</div>
 
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_32%,rgba(217,180,122,0.10),transparent_34%),linear-gradient(90deg,rgba(16,39,61,0.95),rgba(16,39,61,0.68)_42%,rgba(16,39,61,0.18))]" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#10273D]/30 via-transparent to-[#10273D]/66" />
