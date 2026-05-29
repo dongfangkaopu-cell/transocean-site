@@ -202,15 +202,15 @@ export default function Page() {
         className="relative min-h-screen overflow-hidden bg-[#10273D]"
       >
         <video
-          src="/videos/hero.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster="/images/hero-poster.jpg"
-          className="absolute inset-0 h-full w-full object-cover opacity-[0.74]"
-        />
+  src="/videos/hero.mp4"
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="auto"
+  poster="/images/hero-poster.jpg"
+  className="absolute inset-0 h-full w-full object-cover opacity-[0.74]"
+/>
 
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_32%,rgba(217,180,122,0.10),transparent_34%),linear-gradient(90deg,rgba(16,39,61,0.95),rgba(16,39,61,0.68)_42%,rgba(16,39,61,0.18))]" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#10273D]/30 via-transparent to-[#10273D]/66" />
