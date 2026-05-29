@@ -202,13 +202,13 @@ export default function Page() {
         className="relative min-h-screen overflow-hidden bg-[#10273D]"
       >
         <video
-  src="/videos/hero.mp4"
+src="/videos/hero.mp4"
   autoPlay
   muted
   loop
   playsInline
+  webkit-playsinline="true"
   preload="auto"
-  poster="/images/hero-poster.jpg"
   className="absolute inset-0 h-full w-full object-cover opacity-[0.74]"
 />
 
