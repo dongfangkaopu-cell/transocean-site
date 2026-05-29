@@ -202,7 +202,7 @@ export default function Page() {
         className="relative min-h-screen overflow-hidden bg-[#10273D]"
       >
         <video
-src="/videos/hero.mp4"
+src="/videos/hero-v2.mp4"
   autoPlay
   muted
   loop
